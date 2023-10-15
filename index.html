@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Weather App</title>
+    <script type="module" src="./src/js/control.js"></script>
+  </head>
+  <body class="grid-center">
+    <div class="container-app flex" data-container-app>
+      <!-------------------- LEFT SECTION ------------------>
+      <section class="section-left left-border-radius flex-column">
+        <!-- Search Bar -->
+
+        <div class="search-bar flex">
+          <button class="search-button grid-center" data-search-button>
+            <img
+              src="./design/magnifying-glass.png"
+              alt="Search icon image"
+              class="search-icon"
+            />
+          </button>
+          <input type="text" placeholder="Search for a location..." value="" />
+        </div>
+
+        <!-- Current Weather Icon Template -->
+
+        <img
+          src="./design/sun.png"
+          alt="Current Weather Image"
+          class="current-weather-icon"
+          data-current-weather-icon
+        />
+
+        <!-- Current Weather Tempurture And Date Template -->
+
+        <div class="current-weather-temp flex">
+          <span data-current-weather-temp>375</span>
+          <span class="current-temp-unit" data-current-temp-unit>°F</span>
+        </div>
+
+        <!------------------------------------------------------->
+
+        <div class="current-date flex-column">
+          <span class="current-day" data-cuurent-day>Monday,</span>
+          <span class="current-time" data-current-time>4:54 PM</span>
+        </div>
+
+        <!-- Current Weather Forcast Template -->
+
+        <div class="current-forcast-container flex-column">
+          <!------------------------------------------------------->
+
+          <div class="current-forcast flex">
+            <img
+              src="./design/sun.png"
+              alt="Forcast Icon"
+              class="current-forcast-icon"
+              data-current-forcast-icon
+            />
+            <span class="current-forcast-text" data-current-forcast-text>
+              Mostly cloudy
+            </span>
+          </div>
+
+          <!------------------------------------------------------->
+
+          <div class="current-forcast flex">
+            <img
+              src="./design/sun.png"
+              alt="Forcast Icon"
+              class="current-forcast-icon"
+              data-current-forcast-icon
+            />
+            <span class="current-forcast-text" data-current-forcast-text>
+              Mostly cloudy
+            </span>
+          </div>
+
+          <!------------------------------------------------------->
+        </div>
+      </section>
+
+      <!-------------------- RIGHT SECTION ------------------>
+      <section class="section-right right-border-radius flex-column">
+        <div class="section-control flex">
+          <!------------------------------------------------------->
+          <div
+            class="switch-weather-cards flex"
+            data-weather-cards-type="Today"
+          >
+            <span class="active-weather-cards">Today</span>
+            <span>Week</span>
+          </div>
+
+          <!------------------------------------------------------->
+
+          <div class="switch-temp-unit flex">
+            <button class="button-switch-unit active-temp-unit">
+              <span data-temp-unit="celsuis">°C</span>
+            </button>
+
+            <button class="button-switch-unit">
+              <span data-temp-unit="fehranheit">°F</span>
+            </button>
+          </div>
+
+          <!------------------------------------------------------->
+        </div>
+
+        <!-- Weather cards Template -->
+        <div class="weather-cards flex">
+          <div class="weather-card flex-column">
+            <span class="weather-card-date">Sun</span>
+
+            <img src="./design/sun.png" alt="" class="weather-card-icon" />
+
+            <div class="weather-card-temps flex">
+              <span class="day-time-temp">25°</span>
+              <span class="night-time-temp">7°</span>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="weather-card flex-column">
+            <span class="weather-card-date">6:00 PM</span>
+            <img src="./design/sun.png" alt="" class="weather-card-icon" />
+            <div class="weather-card-temps flex">
+              <span class="day-time-temp">15°</span>
+              <span class="night-time-temp">-3°</span>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="weather-card flex-column">
+            <span class="weather-card-date">Sun</span>
+            <img src="./design/sun.png" alt="" class="weather-card-icon" />
+            <div class="weather-card-temps flex">
+              <span class="day-time-temp">25°</span>
+              <span class="night-time-temp">-11°</span>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="weather-card flex-column">
+            <span class="weather-card-date">Sun</span>
+            <img
+              src="./design/009-water.png"
+              alt=""
+              class="weather-card-icon"
+            />
+            <div class="weather-card-temps flex">
+              <span class="day-time-temp">9°</span>
+              <span class="night-time-temp">-10°</span>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="weather-card flex-column">
+            <span class="weather-card-date">Sun</span>
+            <img src="./design/sun.png" alt="" class="weather-card-icon" />
+            <div class="weather-card-temps flex">
+              <span class="day-time-temp">15°</span>
+              <span class="night-time-temp">-3°</span>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="weather-card flex-column">
+            <span class="weather-card-date">Sun</span>
+            <img src="./design/sun.png" alt="" class="weather-card-icon" />
+            <div class="weather-card-temps flex">
+              <span class="day-time-temp">15°</span>
+              <span class="night-time-temp">-3°</span>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="weather-card flex-column">
+            <span class="weather-card-date">Sun</span>
+            <img src="./design/sun.png" alt="" class="weather-card-icon" />
+            <div class="weather-card-temps flex">
+              <span class="day-time-temp">15°</span>
+              <span class="night-time-temp">-3°</span>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+        </div>
+
+        <!-- Highlight Templates -->
+        <h1 class="highlights-heading">Today's Highlights</h1>
+
+        <div class="highlights-container grid-three-columns">
+          <div class="highlight-card flex">
+            <img
+              src="./design/008-wind.png"
+              alt=""
+              class="highlight-card-icon"
+            />
+            <div class="highlight-card-data flex-column">
+              <span class="highlight-card-title">Wind Speed</span>
+
+              <div class="highlight-card-data-details">
+                <span class="data-value">369 </span
+                ><span class="value-unit">°F</span>
+              </div>
+              <div class="highlight-card-description">Fast wind</div>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+
+          <div class="highlight-card flex">
+            <img
+              src="./design/002-cloudy-1.png"
+              alt=""
+              class="highlight-card-icon"
+            />
+            <div class="highlight-card-data flex-column">
+              <span class="highlight-card-title">Wind Speed</span>
+
+              <div class="highlight-card-data-details">
+                <span class="data-value">34 </span
+                ><span class="value-unit">°C</span>
+              </div>
+              <div class="highlight-card-description">Fast wind</div>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="highlight-card flex">
+            <img
+              src="./design/001-cloudy.png"
+              alt=""
+              class="highlight-card-icon"
+            />
+            <div class="highlight-card-data flex-column">
+              <span class="highlight-card-title">High Temp</span>
+
+              <div class="highlight-card-data-details">
+                <span class="data-value">7 </span
+                ><span class="value-unit">km/h</span>
+              </div>
+              <div class="highlight-card-description">Precip</div>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="highlight-card flex">
+            <img
+              src="./design/006-rain.png"
+              alt=""
+              class="highlight-card-icon"
+            />
+            <div class="highlight-card-data flex-column">
+              <span class="highlight-card-title">Fl Low</span>
+
+              <div class="highlight-card-data-details">
+                <span class="data-value">7 </span
+                ><span class="value-unit">km/h</span>
+              </div>
+              <div class="highlight-card-description">Fast wind</div>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="highlight-card flex">
+            <img
+              src="./design/007-snow.png"
+              alt=""
+              class="highlight-card-icon"
+            />
+            <div class="highlight-card-data flex-column">
+              <span class="highlight-card-title">Fl High</span>
+
+              <div class="highlight-card-data-details">
+                <span class="data-value">7 </span
+                ><span class="value-unit">km/h</span>
+              </div>
+              <div class="highlight-card-description">Very hot</div>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+          <div class="highlight-card flex">
+            <img
+              src="./design/010-moon.png"
+              alt=""
+              class="highlight-card-icon"
+            />
+            <div class="highlight-card-data flex-column">
+              <span class="highlight-card-title">Wind Speed</span>
+
+              <div class="highlight-card-data-details">
+                <span class="data-value">7 </span
+                ><span class="value-unit">km/h</span>
+              </div>
+              <div class="highlight-card-description">Fast wind</div>
+            </div>
+          </div>
+          <!---------------------------------------------------------------->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
