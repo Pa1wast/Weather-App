@@ -1,8 +1,7 @@
 {
   "name": "weather---app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "weather-app",
   "scripts": {
     "start": "parcel ./index.html",
     "build": "parcel build ./index.html"
