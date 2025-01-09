@@ -43,13 +43,16 @@ html {
 
 body {
   background-color: #afd3e2;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 .container-app {
   width: 95%;
-  height: 85%;
+  height: 90%;
 }
 
 .section-left {

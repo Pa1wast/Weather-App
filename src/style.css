@@ -61,12 +61,17 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #afd3e2;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .container-app {
   width: 95%;
-  height: 85%;
-  /* margin-block: 1.5rem auto; */
+  height: 90%;
+  
+
 }
 
 /*-----------------------------------------------------------------*/

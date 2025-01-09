@@ -6,6 +6,8 @@ export async function fetchApi(latitude, longitude, API_KEY, requestType) {
   );
 
   const data = await response.json();
+
+  console.log({data});
   return data;
 }
 

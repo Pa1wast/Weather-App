@@ -6,6 +6,8 @@ async function updateDisplay() {
   await model.getDataFromUser();
   view.updateCurIcon(model.state.weatherData.icon);
 
+  console.log({lol:model.state.weatherData})
+
   if (model.state.curUnit === '°C') {
     view.updateTemp(model.state.weatherData.tempC, '°C');
     view.updateWeatherCards(

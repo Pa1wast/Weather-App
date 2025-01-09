@@ -583,6 +583,9 @@ var _helperJs = require("./helper.js");
 async function updateDisplay() {
     await _modelJs.getDataFromUser();
     (0, _viewJsDefault.default).updateCurIcon(_modelJs.state.weatherData.icon);
+    console.log({
+        lol: _modelJs.state.weatherData
+    });
     if (_modelJs.state.curUnit === "\xb0C") {
         (0, _viewJsDefault.default).updateTemp(_modelJs.state.weatherData.tempC, "\xb0C");
         (0, _viewJsDefault.default).updateWeatherCards(_modelJs.state.weatherData.forecast.forecastHour, "\xb0C");
@@ -751,6 +754,9 @@ const API_KEY = "ecdfbd386d04459d8a9100346231710";
 async function fetchApi(latitude, longitude, API_KEY, requestType) {
     const response = await fetch(`http://api.weatherapi.com/v1/${requestType}.json?key=${API_KEY}&q=${latitude},${longitude}&days=${3}aqi=no`);
     const data = await response.json();
+    console.log({
+        data
+    });
     return data;
 }
 function getCoords(position, state) {
